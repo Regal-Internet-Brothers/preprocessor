@@ -1,0 +1,19 @@
+Strict
+
+Public
+
+' Preprocessor related:
+#If TARGET = "glfw"
+	#DEFAULT_DESKTOP_FULLSCREEN = True
+	
+	#DEFAULT_DESKTOP_WINDOW_W = 0
+	#DEFAULT_DESKTOP_WINDOW_H = 0
+#Else
+	#DEFAULT_DESKTOP_FULLSCREEN = False
+	
+	#DEFAULT_DESKTOP_WINDOW_W = 640
+	#DEFAULT_DESKTOP_WINDOW_H = 360
+#End
+
+' Imports:
+' Nothing so far.
