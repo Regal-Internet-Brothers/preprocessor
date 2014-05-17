@@ -40,7 +40,7 @@ Public
 #DEFAULT_XNA_VSYNC = True
 
 ' Android:
-#ANDROID_LOCATION = "com.regalinternetbrothers.games.test"
+#ANDROID_LOCATION = "com.unknownparty.games.test"
 #ANDROID_HICOLOR_TEXTURES = True
 
 ' Generic mobile related:
