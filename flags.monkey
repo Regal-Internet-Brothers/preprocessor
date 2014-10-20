@@ -6,7 +6,7 @@ Public
 ' Nothing so far.
 
 ' Preprocessor related:
-#If TARGET = "stdcpp"
+#If TARGET = "stdcpp" Or TARGET = "javatool"
 	#FLAG_CONSOLEMODE = True
 #End
 
@@ -14,7 +14,7 @@ Public
 	#FLAG_MOBILE = True
 #End
 
-#If TARGET = "android" Or TARGET="glfw" Or TARGET = "stdcpp"' Or TARGET="xna"
+#If TARGET = "android" Or TARGET="glfw" Or TARGET = "stdcpp" ' Or TARGET="xna" Or TARGET = "javatool"
 	#FLAG_MULTIPLAYER = True
 #End
 
