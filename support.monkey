@@ -16,6 +16,8 @@ Public
 		* These initial imports are private unless otherwise specified.
 		* Most of the default settings in this module could change at any point, but I'll try to keep things consistent.
 		* Implementation flags are commonly "INSERTMODULENAMEHEREINCAPS_IMPLEMENTED". That being said, not all modules support this.
+	TODO:
+		/ Reorder the imports to better represent their usage.
 #End
 
 ' Preprocessor related:
@@ -35,7 +37,7 @@ Public
 	#PREPROCESSOR_SUPPORT_IMPORT_IMAGEDIMENSIONS		= True
 	#PREPROCESSOR_SUPPORT_IMPORT_IOELEMENT				= True
 	#PREPROCESSOR_SUPPORT_IMPORT_MOJOEMULATOR			= False ' True
-	#PREPROCESSOR_SUPPORT_IMPORT_PUBLICDATASTREAM		= True
+	#PREPROCESSOR_SUPPORT_IMPORT_PUBLICDATASTREAM		= False ' True
 	#PREPROCESSOR_SUPPORT_IMPORT_REGALNET				= False ' True
 	#PREPROCESSOR_SUPPORT_IMPORT_RETROSTRINGS			= True
 	#PREPROCESSOR_SUPPORT_IMPORT_SCREEN					= False ' True
@@ -52,84 +54,84 @@ Public
 	Private
 #End
 
-#If PREPROCESSOR_SUPPORT_IMPORT_AUTOFIT
-	Import autofit
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_AUTOSTREAM
-	Import autostream
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_BOXUTIL
-	Import boxutil
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_BYTEORDER
-	Import byteorder
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_DELTATIME
-	Import deltatime
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_ETERNITY
-	Import eternity
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_HASH
-	Import hash
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_IMAGEDIMENSIONS
-	Import imagedimensions
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_IOELEMENT
-	Import ioelement
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_MOJOEMULATOR
-	Import mojoemulator
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_PUBLICDATASTREAM
-	Import publicdatastream
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_REGALNET
-	Import regalnet
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_RETROSTRINGS
-	Import retrostrings
-#End
-
-#If PREPROCESSOR_SUPPORT_IMPORT_SCREEN
-	Import screen
+#If PREPROCESSOR_SUPPORT_IMPORT_TYPETOOL
+	Import typetool
 #End
 
 #If PREPROCESSOR_SUPPORT_IMPORT_SIZEOF
 	Import sizeof
 #End
 
-#If PREPROCESSOR_SUPPORT_IMPORT_STRINGUTIL
-	Import stringutil
+#If PREPROCESSOR_SUPPORT_IMPORT_BOXUTIL
+	Import boxutil
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_AUTOFIT
+	Import autofit
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_BYTEORDER
+	Import byteorder
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_PUBLICDATASTREAM
+	Import publicdatastream
 #End
 
 #If PREPROCESSOR_SUPPORT_IMPORT_TIME
 	Import time
 #End
 
-#If PREPROCESSOR_SUPPORT_IMPORT_TYPETOOL
-	Import typetool
+#If PREPROCESSOR_SUPPORT_IMPORT_ETERNITY
+	Import eternity
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_IMAGEDIMENSIONS
+	Import imagedimensions
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_MOJOEMULATOR
+	Import mojoemulator
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_STRINGUTIL
+	Import stringutil
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_RETROSTRINGS
+	Import retrostrings
 #End
 
 #If PREPROCESSOR_SUPPORT_IMPORT_UTIL
 	Import util
 #End
 
+#If PREPROCESSOR_SUPPORT_IMPORT_HASH
+	Import hash
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_AUTOSTREAM
+	Import autostream
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_IOELEMENT
+	Import ioelement
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_DELTATIME
+	Import deltatime
+#End
+
 #If PREPROCESSOR_SUPPORT_IMPORT_VECTOR
 	Import vector
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_SCREEN
+	Import screen
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_REGALNET
+	Import regalnet
 #End
 
 #If PREPROCESSOR_SUPPORT_PRIVATE_IMPORTS
