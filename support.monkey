@@ -4,6 +4,9 @@ Public
 
 #Rem
 	DESCRIPTION:
+		* ATTENTION: THIS MODULE HAS BECOME DEPRECATED. UPDATING HAS NOW STOPPED,
+		AND USE OF THIS MODULE SHOULD NOT CONTINUE UNDER NORMAL CIRCUMSTANCES.
+		
 		* This module provides a simple interface for dealing with the preprocessor functionality of my other modules.
 	NOTES:
 		* In the first file you have import this module, define any settings for my modules.
@@ -17,7 +20,7 @@ Public
 		* Most of the default settings in this module could change at any point, but I'll try to keep things consistent.
 		* Implementation flags are commonly "INSERTMODULENAMEHEREINCAPS_IMPLEMENTED". That being said, not all modules support this.
 	TODO:
-		/ Reorder the imports to better represent their usage.
+		* Development has stopped.
 #End
 
 ' Preprocessor related:
@@ -27,6 +30,7 @@ Public
 ' Import flags:
 #If Not PREPROCESSOR_SUPPORT_EXPLICIT_IMPORTS
 	' These all correspond to one or more modules:
+	#PREPROCESSOR_SUPPORT_IMPORT_ARGUMENTLOADER			= False
 	#PREPROCESSOR_SUPPORT_IMPORT_AUTOFIT				= True
 	#PREPROCESSOR_SUPPORT_IMPORT_AUTOSTREAM				= True
 	#PREPROCESSOR_SUPPORT_IMPORT_BOXUTIL				= True
@@ -104,6 +108,10 @@ Public
 
 #If PREPROCESSOR_SUPPORT_IMPORT_UTIL
 	Import util
+#End
+
+#If PREPROCESSOR_SUPPORT_IMPORT_ARGUMENTLOADER
+	Import argumentloader
 #End
 
 #If PREPROCESSOR_SUPPORT_IMPORT_HASH
