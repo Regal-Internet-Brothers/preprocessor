@@ -8,11 +8,11 @@ Public
 ' File extensions:
 
 ' All of these are added to the default file-type list.
-#DEFAULT_TEXT_FILES = "*.txt|*.bat|*.xml|*.html|*.json|*.js|*.lua|*.script|*.credits|*.cfg|*.info|*.frag|*.vert|*.minic|*.mc|*.src"
+#DEFAULT_TEXT_FILES = "*.txt|*.bat|*.xml|*.html|*.json|*.js|*.lua|*.script|*.note|*.credits|*.cfg|*.info|*.frag|*.vert|*.minic|*.mc|*.src|*.glsl"
 #DEFAULT_IMAGE_FILES = "*.png|*.jpg|*.ico"
 #DEFAULT_SOUND_FILES = "*.ogg|*.mp3|*.wav"
 #DEFAULT_MUSIC_FILES = "*.ogg|*.mp3|*.wma"
-#DEFAULT_BIN_FILES = "*.bin|*.dat|*.ecf|*.map|*.server|*.client|*.temp|*.buf|*.page|*.zip|*.7z"
+#DEFAULT_BIN_FILES = "*.bin|*.dat|*.ecf|*.map|*.server|*.client|*.temp|*.buf|*.page|*.zip|*.7z|*.osf"
 
 #DEFAULT_FILTERIMAGES = False
 #DEFAULT_BACKBUFFER_ACCESS = True
@@ -49,8 +49,8 @@ Public
 #MOBILE_SCREEN_H = 360
 
 ' Apply the default file extensions:
-#TEXT_FILES += DEFAULT_TEXT_FILES
-#IMAGE_FILES += DEFAULT_IMAGE_FILES
-#SOUND_FILES += DEFAULT_SOUND_FILES
-#MUSIC_FILES += DEFAULT_MUSIC_FILES
-#BINARY_FILES += DEFAULT_BIN_FILES
+#TEXT_FILES = DEFAULT_TEXT_FILES
+#IMAGE_FILES = DEFAULT_IMAGE_FILES
+#SOUND_FILES = DEFAULT_SOUND_FILES
+#MUSIC_FILES = DEFAULT_MUSIC_FILES
+#BINARY_FILES = DEFAULT_BIN_FILES
